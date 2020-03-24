@@ -1,0 +1,11 @@
+.yellow {
+  color: yellow;
+}
+.active {
+  color: tomato;
+}
+
+a,
+.nav-item {
+  color: #fff;
+}

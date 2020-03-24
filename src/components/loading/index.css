@@ -1,0 +1,96 @@
+.bigbox {
+  width: 380px;
+  height: 270px;
+  margin: 150px auto 0;
+}
+
+.bigbox div {
+  height: 200px;
+  width: 24px;
+  margin: 15px;
+  float: left;
+  background: #ddd;
+  border-radius: 12px;
+}
+
+.bigbox p {
+  text-align: center;
+  font-size: 18px;
+  color: #fff;
+}
+
+.bigbox .box:nth-child(1) {
+  background-color: #20c070;
+  animation: mymove 500ms ease 0ms infinite alternate;
+}
+
+.bigbox .box:nth-child(2) {
+  background-color: #3090d0;
+  animation: mymove 500ms ease 100ms infinite alternate;
+}
+
+.bigbox .box:nth-child(3) {
+  background-color: #9050b0;
+  animation: mymove 500ms ease 200ms infinite alternate;
+}
+
+.bigbox .box:nth-child(4) {
+  background-color: #e07020;
+  animation: mymove 500ms ease 300ms infinite alternate;
+}
+
+.bigbox .box:nth-child(5) {
+  background-color: #c03020;
+  animation: mymove 500ms ease 400ms infinite alternate;
+}
+
+.bigbox .box:nth-child(6) {
+  background-color: #e04030;
+  animation: mymove 500ms ease 500ms infinite alternate;
+}
+
+.bigbox .box:nth-child(7) {
+  background-color: #e04080;
+  animation: mymove 500ms ease 600ms infinite alternate;
+}
+
+@keyframes mymove {
+  /* 2d缩放 */
+  from {
+      transform: scale(0.8, 0.2);
+  }
+
+  to {
+      transform: scale(1, 1);
+  }
+}
+
+
+
+.simple-spinner {
+  height: 48px;
+  width: 48px;
+  border: 5px solid rgba(150, 150, 150, 0.2);
+  border-radius: 50%;
+  border-top-color: rgb(150, 150, 150);
+  animation: rotate 1s 0s infinite linear;
+  /* animation: rotate 1s 0s infinite ease-in-out alternate; */
+}
+
+.simple-spinner::after {
+  content: '';
+  height: 60%;
+  width: 60%;
+  display: block;
+  margin: 10px auto;
+  border: inherit;
+  border-radius: inherit;
+  border-top-color: inherit;
+  animation: rotate .5s 0s infinite linear reverse;
+}
+
+@keyframes rotate {
+  0%   { transform: rotate(0);      }
+  100% { transform: rotate(360deg); }
+}
+

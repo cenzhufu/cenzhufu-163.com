@@ -1,0 +1,9 @@
+.a {
+  display: inline-block;
+  width: 120px;
+  height: 120px;
+  border: 1px solid red;
+}
+img {
+  width: 100%;
+}

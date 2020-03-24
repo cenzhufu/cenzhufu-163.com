@@ -1,0 +1,120 @@
+/* @import 'leaflet/dist/leaflet.css'; */
+
+.leaflet {
+  width: 50%;
+  height:600px;
+}
+
+.leaflet-markers-camera {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  line-height: normal;
+  background-image: url(./camera.png);
+}
+
+.leaflet-marker-camera {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  line-height: normal;
+
+}
+
+.offline {
+  background-image: url(./camera_offline.png);
+}
+
+.online {
+  background-image: url(./camera.png);
+}
+
+
+
+
+.leaflet-marker-container {
+  position: absolute;
+  top: -8px;
+  left: -48px;
+
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.leaflet-marker-container p {
+  font-weight: 700;
+  color: blue;
+}
+
+
+
+
+.leaflet-popup-content-wrapper {
+  width: 240px !important;
+
+}
+
+.popup-title {
+  text-align: center;
+}
+.camera-ul {
+  /* padding-left: 0; */
+  padding: 10px 0 0 0;
+  max-height: 220px ;
+  overflow: auto;
+  border-top: 1px solid gray;
+}
+
+.camera-li-container {
+  list-style-type: none;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.camera-online {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  line-height: normal;
+  background-image: url(./camera.png);
+}
+
+.camera-offline {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  line-height: normal;
+  background-image: url(./camera_offline.png);
+}
+
+.camera-name {
+  padding-left: 4px;
+  cursor: pointer;
+}
+
+.camera-name:hover {
+  color: blue;
+}
+
+.leaflet-button-container {
+  position: absolute;
+  top: 9%;
+  left: 39%;
+  width: 200px;
+  height: 32px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  z-index: 998;
+  background: white;
+  box-shadow: 0 0 10px gray ;
+}
+
+.leaflet-button-item {
+  line-height: 32px;
+  text-align: center;
+  cursor: pointer;
+}
